@@ -1,0 +1,9 @@
+<h1>Posts</h1>
+
+<ul>
+  {{#each post in model}}
+    <li>{{post.id}}. {{post.name}}</li>
+  {{/each}}
+</ul>
+
+<button {{action 'loadMore'}}>Load more</button>
